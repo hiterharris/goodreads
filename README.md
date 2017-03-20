@@ -1,4 +1,4 @@
-#Goodreads Bookshelf
+# Goodreads Bookshelf
 
 ## After exploring the Goodreads website and mobile app, I found it to be lacking in several design areas. The first thing I noticed was their less than awe inspiring color scheme. My first impression of a book store or library is typically a boring atmosphere and the Goodreads website definitely follows this trend. The next thing I noticed was how difficult it was to find where I wanted to go and how to navigate to it.  There are many different links, all with similar font, color, and size which doesn't give me any indication as to where the most important links might be.  I did however find it very easy to search for a desired book and add it to my list of "My Books".  
 
