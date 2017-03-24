@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>goodreads</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style.scss" rel="stylesheet">
@@ -11,9 +12,37 @@
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <p class="goodreads">goodreads</p>
+
+<!-- Top section of the navigation bar -->
+        <div class="nav-top">
+          <div class="nav-left">
+            <p class="logo">good<span>reads</span></p>
+          </div>
+
+          <div class="nav-center">
+            <input class="search" type="text" name="" value="">
+            <button class="search-button" type="button" name="button"></button>
+          </div>
+
+          <div class="nav-right">
+            <div class="icons">
+              <img class="person" src="images/person.svg" alt="">
+              <img class="envelope"src="images/envelope.svg" alt="">
+              <img class="notifications" src="images/notification.svg" alt="">
+          </div>
         </div>
+
+<!-- Bottom section of the navigation bar (Menu)-->
+        <div class="nav-menu">
+          <ul class="menu-items">
+            <li>home</li>
+            <li>my books</li>
+            <li>browse</li>
+            <li>community</li>
+          </ul>
+        </div>
+
+
       </nav>
     </header>
 
