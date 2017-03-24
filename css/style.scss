@@ -26,7 +26,7 @@ nav {
 
 .nav-center {
   width:50%;
-  padding-left:275px;
+  padding-left:250px;
   padding-top:20px;
 
 
@@ -52,14 +52,15 @@ nav {
   .person, .envelope, .notifications {
     height:20px;
     width:20px;
-    padding-left:20px;
+    padding-left:25px;
   }
 }
 
 .nav-menu {
   color:white;
-  font-family:'Arial';
+  font-family:'lato';
   font-size: 20px;
+  font-weight: lighter;
 
   .menu-items {
     list-style:none;
@@ -67,7 +68,7 @@ nav {
 
     li {
       display:inline;
-      margin: 0px 20px 0px 20px;
+      margin: 0px 30px 0px 30px;
     }
   }
 }
