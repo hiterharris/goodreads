@@ -4,13 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>goodreads</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style.scss" rel="stylesheet">
   </head>
   <body>
-    <header>
       <nav>
 
 <!-- Top section of the navigation bar -->
@@ -21,7 +20,9 @@
 
           <div class="nav-center">
             <input class="search" type="text" name="" value="">
-            <button class="search-button" type="button" name="button"></button>
+
+            <a href="#"><button class="search-button" type="button" name="button"> search</button></a>
+
           </div>
 
           <div class="nav-right">
@@ -35,19 +36,59 @@
 <!-- Bottom section of the navigation bar (Menu)-->
         <div class="nav-menu">
           <ul class="menu-items">
-            <li>home</li>
-            <li>my books</li>
-            <li>browse</li>
-            <li>community</li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">my books</a></li>
+            <li><a href="#">browse</a></li>
+            <li><a href="#">community</a></li>
           </ul>
         </div>
-
-
       </nav>
-    </header>
+
+    <section class="main">
+
+<!-- my books -->
+      <div class="my-books">
+      
+        <div class="current">
+          <h2>current</h2>
+          <img src="images/down.png" alt="">
+        </div>
+
+        <div class="queue">
+          <h2>queue</h2>
+          <img src="images/down.png" alt="">
+        </div>
+
+        <div class="read">
+          <h2>read</h2>
+          <img src="images/down.png" alt="">
+        </div>
+      </div>
+
+<!-- feed -->
+      <div class="feed">
+        <h1>feed</h1>
+      </div>
+
+ <!-- top reads -->
+      <div class="top-reads">
+        <h1>top reads</h1>
+        <script id="top-book" type="text/x-handlebars-template">
+          {{#each books}}
+          <article>
+            <img class="book-cover" src="images/{{cover}}.jpg" alt="{{title}}">
+            <h4>{{title}}</h4>
+            <h5>{{author}}</h5>
+          </article>
+        {{/each}}
+      </script>
+    </div>
+
+    </section>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

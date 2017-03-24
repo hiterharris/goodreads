@@ -11,7 +11,7 @@ nav {
   margin-left: 5%; }
   .nav-left p {
     color: white;
-    font-size: 32px;
+    font-size: 36px;
     font-family: 'Lato', sans-serif;
     font-weight: lighter; }
     .nav-left p span {
@@ -22,15 +22,21 @@ nav {
   padding-left: 250px;
   padding-top: 20px; }
   .nav-center .search {
-    width: 400px; }
+    width: 400px;
+    border-radius: 8px; }
   .nav-center .search-button {
     color: white;
+    font-family: 'lato';
     background: #FEBD69;
     width: 100px;
     height: 25px;
     border-radius: 8px;
     border: 1px solid grey;
-    margin: 3%; }
+    margin: 3%;
+    cursor: pointer; }
+    .nav-center .search-button a {
+      color: inherit;
+      text-decoration: inherit; }
 
 .nav-right {
   width: 10%; }
@@ -47,8 +53,44 @@ nav {
   .nav-menu .menu-items {
     list-style: none;
     text-align: center; }
+    .nav-menu .menu-items a {
+      color: inherit;
+      text-decoration: inherit; }
     .nav-menu .menu-items li {
       display: inline;
       margin: 0px 30px 0px 30px; }
+
+.main {
+  clear: both;
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: 'lato'; }
+
+.my-books, .feed, .top-reads {
+  float: left; }
+
+.my-books {
+  width: 20%;
+  text-align: center;
+  line-height: 0px; }
+  .my-books .current, .my-books .queue, .my-books .read {
+    border: 1px solid grey; }
+    .my-books .current img, .my-books .queue img, .my-books .read img {
+      height: 20px; }
+
+.feed {
+  width: 60%;
+  height: 1000px;
+  background: lightgrey; }
+
+.top-reads {
+  width: 20%; }
+
+article {
+  line-height: 0px;
+  width: 50%;
+  float: left; }
+  article .book-cover {
+    height: 100px; }
 
 /*# sourceMappingURL=style.css.map */
