@@ -48,26 +48,35 @@
 
 <!-- my books -->
       <div class="my-books">
-      
-        <div class="current">
+
+        <div class="current toggle-current-button">
           <h2>current</h2>
           <img src="images/down.png" alt="">
         </div>
+        <div class="current-books toggle-current">
 
-        <div class="queue">
+        </div>
+
+        <div class="queue toggle-queue-button">
           <h2>queue</h2>
           <img src="images/down.png" alt="">
         </div>
+        <div class="current-books toggle-queue">
 
-        <div class="read">
+        </div>
+
+        <div class="read toggle-read-button">
           <h2>read</h2>
           <img src="images/down.png" alt="">
+        </div>
+        <div class="current-books toggle-read">
+
         </div>
       </div>
 
 <!-- feed -->
       <div class="feed">
-        <h1>feed</h1>
+        <h2>my feed</h2>
       </div>
 
  <!-- top reads -->
@@ -77,8 +86,8 @@
           {{#each books}}
           <article>
             <img class="book-cover" src="images/{{cover}}.jpg" alt="{{title}}">
-            <h4>{{title}}</h4>
-            <h5>{{author}}</h5>
+            <h5>{{title}}</h5>
+            <h6>{{author}}</h6>
           </article>
         {{/each}}
       </script>
