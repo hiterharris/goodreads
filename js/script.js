@@ -1,3 +1,4 @@
+//--------- Handlebars ----------
 $(function () {
   var source = $("#top-book").html();
   var template = Handlebars.compile(source);

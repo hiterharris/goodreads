@@ -130,10 +130,11 @@ nav {
   width:60%;
   height:1000px;
   border:1px solid grey;
+  background:#e9ebee;
 
   h2 {
     font-weight:100;
-    padding-left:10px;
+    padding-left:85px;
   }
 }
 
@@ -155,4 +156,11 @@ article {
   .book-cover {
     height:100px;
   }
+}
+
+.post {
+  height:300px;
+  background:white;
+  margin-left:10%;
+  margin-right:10%;
 }
