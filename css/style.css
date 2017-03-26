@@ -110,31 +110,31 @@ article {
   article .book-cover {
     height: 100px; }
 
-.post {
-  height: 300px;
+.post-one, .post-two {
   background: white;
   margin-left: 10%;
   margin-right: 10%;
   border: 1px solid lightgrey; }
-  .post .post-head {
+  .post-one .post-head, .post-two .post-head {
     overflow: hidden;
     font-family: 'Lato';
     padding: 10px; }
-    .post .post-head .post-logo {
+    .post-one .post-head .post-logo, .post-two .post-head .post-logo {
       height: 60px;
+      width: 60px;
       border-radius: 50%;
       float: left; }
-    .post .post-head h2 {
+    .post-one .post-head h2, .post-two .post-head h2 {
       float: left; }
-    .post .post-head p {
+    .post-one .post-head p, .post-two .post-head p {
       float: right;
       font-size: 12px;
       color: grey;
       padding-top: 20px; }
-  .post .post-content img {
+  .post-one .post-content img, .post-two .post-content img {
     height: 200px;
     margin-left: 5%; }
-  .post .post-content p {
+  .post-one .post-content p, .post-two .post-content p {
     width: 60%;
     float: right;
     margin-right: 10%; }
