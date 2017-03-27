@@ -146,4 +146,22 @@ article {
     float: right;
     margin-right: 10%; }
 
+@media (max-width: 724px) {
+  .my-books {
+    display: none; }
+
+  .top-reads {
+    display: none; }
+
+  .feed {
+    width: 100%; } }
+@media (max-width: 400px) {
+  .post-one {
+    height: 500px; }
+
+  .post-content img {
+    width: 25%; }
+  .post-content p {
+    width: 50%; } }
+
 /*# sourceMappingURL=style.css.map */
