@@ -19,9 +19,11 @@
           </div>
 
           <div class="nav-center">
+          <div id="search-container">
             <input class="search" type="text" name="" value="">
 
             <a href="#"><button class="search-button" type="button" name="button"> search</button></a>
+          </div>
 
           </div>
 
@@ -30,19 +32,45 @@
               <a href="#"><img class="person" src="images/person.svg" alt=""></a>
               <a href="#"><img class="envelope"src="images/envelope.svg" alt=""></a>
               <a href="#"><img class="notifications" src="images/notification.svg" alt=""></a>
+            </div>
           </div>
         </div>
+
 
 <!-- Bottom section of the navigation bar (Menu)-->
         <div class="nav-menu">
           <ul class="menu-items">
             <li><a href="#">home</a></li>
             <li><a href="#">my books</a></li>
-            <li><a href="#">browse</a></li>
-            <li><a href="#">community</a></li>
+            <li class="dropdown-trigger"><a href="#">browse</a>
+              <ul class="browse-dropdown">
+                <li><a href="#">Recommendations</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Choice Awards</a></li>
+                <li><a href="#">Giveaways</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Lists</a></li>
+                <li><a href="#">News & Interviews</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-trigger"><a href="#">community</a>
+              <ul class="browse-dropdown">
+                <li><a href="#">Groups</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Quotes</a></li>
+                <li><a href="#">Ask the Author</a></li>
+                <li><a href="#">Trivia</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">Creative Writing</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Events</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
-      </nav>
+    </nav>
 
     <section class="main">
 
@@ -55,7 +83,7 @@
         </div>
         <div class="current-books toggle-current">
           <img src="images/killinglincoln.jpg" alt="">
-          <img src="images/theroad.jpg" alt="">
+          <img src="images/thelittleprince.jpg" alt="">
         </div>
 
         <div class="queue toggle-queue-button">
@@ -74,6 +102,7 @@
           <img src="images/whitefang.jpg" alt="">
           <img src="images/theoutsiders.jpg" alt="">
           <img src="images/harrypotter.jpg" alt="">
+          <img src="images/theroad.jpg" alt="">
         </div>
       </div>
 
@@ -95,7 +124,7 @@
 
         <br><br><br>
 
-        <div class="post-two">
+        <div class="post-one">
           <div class="post-head">
             <img src="images/hiter.jpg" class="post-logo" alt="">
             <h2>Hiter Harris IV</h2>

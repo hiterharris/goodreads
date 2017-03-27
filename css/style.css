@@ -1,28 +1,31 @@
 nav {
   width: 100%;
-  background: #232F3E;
-  overflow: hidden; }
+  background: #232F3E; }
+
+.nav-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
 
 .nav-left, .nav-center, .nav-right {
-  display: inline-block; }
+  display: inline-block;
+  box-sizing: border-box; }
 
-.nav-left {
-  width: 10%;
-  margin-left: 5%; }
-  .nav-left a {
-    text-decoration: none; }
-  .nav-left p {
-    color: white;
-    font-size: 36px;
-    font-family: 'Lato', sans-serif;
-    font-weight: lighter; }
-    .nav-left p span {
-      color: #FEBD69; }
+.nav-left a {
+  text-decoration: none; }
+.nav-left p {
+  color: white;
+  font-size: 36px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter; }
+  .nav-left p span {
+    color: #FEBD69; }
 
 .nav-center {
-  width: 50%;
-  padding-left: 250px;
   padding-top: 20px; }
+  .nav-center #search-container {
+    margin: 0 auto; }
   .nav-center .search {
     width: 400px;
     border-radius: 8px; }
@@ -34,18 +37,17 @@ nav {
     height: 25px;
     border-radius: 8px;
     border: 1px solid grey;
-    margin: 3%;
     cursor: pointer; }
     .nav-center .search-button a {
       color: inherit;
       text-decoration: inherit; }
 
-.nav-right {
-  width: 10%; }
-  .nav-right .person, .nav-right .envelope, .nav-right .notifications {
-    height: 20px;
-    width: 20px;
-    padding-left: 25px; }
+.nav-right .icons {
+  float: right; }
+.nav-right .person, .nav-right .envelope, .nav-right .notifications {
+  height: 20px;
+  width: 20px;
+  padding-left: 25px; }
 
 .nav-menu {
   color: white;
@@ -54,13 +56,36 @@ nav {
   font-weight: lighter; }
   .nav-menu .menu-items {
     list-style: none;
+    padding: 0;
+    margin: 0;
     text-align: center; }
+    .nav-menu .menu-items li {
+      display: inline-block;
+      margin: 0px 30px 0px 30px; }
     .nav-menu .menu-items a {
       color: inherit;
+      display: block;
       text-decoration: inherit; }
-    .nav-menu .menu-items li {
-      display: inline;
-      margin: 0px 30px 0px 30px; }
+
+.dropdown-trigger {
+  position: relative; }
+
+.browse-dropdown {
+  display: none;
+  position: absolute;
+  padding: 0;
+  border: 1px solid grey; }
+  .browse-dropdown li {
+    display: block;
+    background: white;
+    color: black;
+    padding: 10px;
+    white-space: nowrap;
+    width: 200px;
+    margin: 0px !important; }
+
+.dropdown-trigger:hover .browse-dropdown {
+  display: block; }
 
 .main {
   clear: both;
@@ -86,16 +111,15 @@ nav {
       opacity: .75; }
 
 .current-books {
-  height: 325px;
+  overflow: hidden;
   background: lightgrey; }
   .current-books img {
-    height: 130px;
+    height: 125px;
     float: left;
     margin: 9%; }
 
 .feed {
   width: 60%;
-  height: 1000px;
   border: 1px solid grey;
   background: #e9ebee; }
   .feed h2 {
@@ -130,7 +154,8 @@ article {
       height: 60px;
       width: 60px;
       border-radius: 50%;
-      float: left; }
+      float: left;
+      object-fit: cover; }
     .post-one .post-head h2, .post-two .post-head h2 {
       float: left; }
     .post-one .post-head p, .post-two .post-head p {
@@ -140,24 +165,59 @@ article {
       padding-top: 20px; }
   .post-one .post-content img, .post-two .post-content img {
     height: 200px;
-    margin-left: 5%; }
+    margin-left: 5%;
+    object-fit: contain; }
   .post-one .post-content p, .post-two .post-content p {
     width: 60%;
     float: right;
     margin-right: 10%; }
 
-@media (max-width: 724px) {
+@media (max-width: 769px) {
+  .nav-left, .nav-center, .nav-right {
+    display: block; }
+
+  .nav-left {
+    margin: 0 auto;
+    padding: 0; }
+    .nav-left .logo {
+      text-align: center; }
+
+  .nav-center {
+    margin: 0 auto;
+    padding: 0; }
+    .nav-center .search-button {
+      margin-left: 40%; }
+
+  .nav-right {
+    float: right; }
+    .nav-right .icons {
+      display: none; }
+
   .my-books {
-    display: none; }
+    width: 20%; }
 
   .top-reads {
     display: none; }
 
   .feed {
-    width: 100%; } }
+    width: 75%; }
+    .feed .content-img {
+      width: 20%; }
+    .feed p {
+      width: 40%;
+      padding-left: 5px; } }
 @media (max-width: 400px) {
-  .post-one {
-    height: 500px; }
+  .my-books {
+    display: none; }
+
+  .feed {
+    width: 100%; }
+
+  .feed h2 {
+    padding: 0; }
+
+  .post-one .post-head p {
+    float: left; }
 
   .post-content img {
     width: 25%; }
