@@ -28,7 +28,18 @@ $(function () {
         title: 'The Outsiders',
         author: 'S.E. Hinton',
         cover: 'theoutsiders'
-
+    },{
+        title: 'Great Expectations',
+        author: 'Charles Dickens',
+        cover: 'greatexpectations'
+    },{
+        title: 'Heart of Darkness',
+        author: 'Joseph Conrad',
+        cover: 'heartofdarkness'
+    },{
+        title: 'The Great Gatsby',
+        author: 'F. Scott Fitzgerald',
+        cover: 'greatgatsby'
     }]
   };
 

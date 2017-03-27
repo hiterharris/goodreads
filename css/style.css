@@ -54,6 +54,8 @@ nav {
   font-family: 'lato';
   font-size: 20px;
   font-weight: lighter; }
+  .nav-menu button {
+    display: none; }
   .nav-menu .menu-items {
     list-style: none;
     padding: 0;
@@ -117,6 +119,8 @@ nav {
     height: 125px;
     float: left;
     margin: 9%; }
+  .current-books .hod {
+    height: 105px; }
 
 .feed {
   width: 60%;
@@ -207,6 +211,9 @@ article {
       width: 40%;
       padding-left: 5px; } }
 @media (max-width: 400px) {
+  .nav-menu .menu-items {
+    margin: 12px 12px 0px 12px; }
+
   .my-books {
     display: none; }
 

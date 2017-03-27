@@ -90,6 +90,10 @@ nav {
   font-size: 20px;
   font-weight: lighter;
 
+  button {
+    display:none;
+  }
+
   .menu-items {
     list-style:none;
     padding: 0;
@@ -167,6 +171,7 @@ nav {
       height:20px;
       opacity:.75;
     }
+
   }
 }
 
@@ -178,7 +183,10 @@ nav {
     height:125px;
     float:left;
     margin:9%;
+  }
 
+  .hod {
+    height:105px;
   }
 }
 
@@ -314,7 +322,12 @@ article {
   }
 }
 
+
 @media (max-width:400px) {
+
+  .nav-menu .menu-items {
+    margin: 12px 12px 0px 12px;
+  }
 
   .my-books {
     display:none;
