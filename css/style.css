@@ -190,7 +190,7 @@ article {
     margin: 0 auto;
     padding: 0; }
     .nav-center .search-button {
-      margin-left: 40%; }
+      margin-left: 35%; }
 
   .nav-right {
     float: right; }
@@ -213,12 +213,16 @@ article {
 @media (max-width: 400px) {
   .nav-menu .menu-items {
     margin: 12px 12px 0px 12px; }
+    .nav-menu .menu-items li {
+      margin: 0px 30px 10px 30px; }
 
   .my-books {
     display: none; }
 
   .feed {
     width: 100%; }
+    .feed .my-feed {
+      padding-left: 50px; }
 
   .feed h2 {
     padding: 0; }
@@ -229,6 +233,8 @@ article {
   .post-content img {
     width: 25%; }
   .post-content p {
-    width: 50%; } }
+    width: 50%; }
+  .post-content .hh-killinglincoln, .post-content .hh-thelittleprince, .post-content .hh-odyssey, .post-content .hh-killingkennedy {
+    padding-top: 40px; } }
 
 /*# sourceMappingURL=style.css.map */

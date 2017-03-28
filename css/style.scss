@@ -18,9 +18,6 @@ nav {
 
 .nav-left {
 
-  // width:20%;
-  // margin-left: 5%;
-
   a {
     text-decoration: none;
   }
@@ -59,7 +56,6 @@ nav {
     height:25px;
     border-radius:8px;
     border:1px solid grey;
-    // margin:3%;
     cursor: pointer;
 
     a {
@@ -70,7 +66,6 @@ nav {
 }
 
 .nav-right {
-  // width:29%;
 
   .icons {
     float: right;
@@ -192,7 +187,6 @@ nav {
 
 .feed {
   width:60%;
-  // height:1000px;
   border:1px solid grey;
   background:#e9ebee;
 
@@ -289,7 +283,7 @@ article {
     padding:0;
 
     .search-button {
-      margin-left:40%;
+      margin-left:35%;
     }
   }
   .nav-right {
@@ -327,6 +321,10 @@ article {
 
   .nav-menu .menu-items {
     margin: 12px 12px 0px 12px;
+
+    li {
+      margin: 0px 30px 10px 30px;
+    }
   }
 
   .my-books {
@@ -335,10 +333,13 @@ article {
 
   .feed {
     width:100%;
+    .my-feed {
+      padding-left: 50px;
+    }
   }
 
   .feed h2 {
-    padding: 0;
+    padding:0;
   }
 
   .post-one .post-head p {
@@ -346,7 +347,6 @@ article {
   }
 
   .post-one {
-    // height:500px;
   }
 
   .post-content {
@@ -357,6 +357,10 @@ article {
 
     p {
       width:50%;
+    }
+
+    .hh-killinglincoln, .hh-thelittleprince, .hh-odyssey, .hh-killingkennedy {
+      padding-top:40px;
     }
   }
 }
