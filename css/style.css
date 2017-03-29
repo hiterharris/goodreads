@@ -233,7 +233,8 @@ article {
   .post-content img {
     width: 25%; }
   .post-content p {
-    width: 50%; }
+    width: 50%;
+    line-height: 1em !important; }
   .post-content .hh-killinglincoln, .post-content .hh-thelittleprince, .post-content .hh-odyssey, .post-content .hh-killingkennedy {
     padding-top: 40px; } }
 

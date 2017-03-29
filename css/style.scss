@@ -267,6 +267,7 @@ article {
 }
 
 @media (max-width:769px) {
+
   .nav-left, .nav-center, .nav-right {
     display:block;
   }
@@ -358,6 +359,7 @@ article {
 
     p {
       width:50%;
+      line-height: 1em !important;
     }
 
     .hh-killinglincoln, .hh-thelittleprince, .hh-odyssey, .hh-killingkennedy {
