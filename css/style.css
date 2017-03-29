@@ -124,7 +124,6 @@ nav {
 
 .feed {
   width: 60%;
-  border: 1px solid grey;
   background: #e9ebee; }
   .feed h2 {
     font-weight: 100;
@@ -174,7 +173,8 @@ article {
   .post-one .post-content p, .post-two .post-content p {
     width: 60%;
     float: right;
-    margin-right: 10%; }
+    margin-right: 10%;
+    line-height: 2em; }
 
 @media (max-width: 769px) {
   .nav-left, .nav-center, .nav-right {

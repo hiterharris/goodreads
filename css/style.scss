@@ -187,7 +187,7 @@ nav {
 
 .feed {
   width:60%;
-  border:1px solid grey;
+  // border:1px solid grey;
   background:#e9ebee;
 
   h2 {
@@ -261,6 +261,7 @@ article {
       width:60%;
       float:right;
       margin-right:10%;
+      line-height: 2em;
     }
   }
 }
